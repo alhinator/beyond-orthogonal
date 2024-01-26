@@ -1,6 +1,6 @@
 // Code Practice: Beyond Orthogonal
-// Name:
-// Date: 
+// Name: Alex Leghart
+// Date: 1/26/24
 
 // Spritesheet by ElvGames: https://elv-games.itch.io/free-fantasy-dreamland-sprites
 
@@ -10,7 +10,17 @@ let config = {
     type: Phaser.AUTO,
     width: 800,
     height: 800,
-    scene: [ Movement ]
+    render: {
+        pixelArt: true
+    },
+    physics: {
+        default: 'arcade',
+        arcade: {
+            debug: true
+        }
+    },
+    scene: [ Movement ],
+
 }
 
 let game = new Phaser.Game(config)
